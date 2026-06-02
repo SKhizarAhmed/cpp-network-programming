@@ -188,30 +188,4 @@ int main()
 }
 
 
-// ============================================================================
-// Sending an object. Assuming the class Data has been defined
-// elsewhere. Cast the object’s address to a char *
-// 
-// Data data;
-// data.health = 100;
-// byteCount = send(socket, (char *)&data, sizeof(Data), 0);
-// ============================================================================
-
-// ============================================================================
-// Receiving an object
-// 
-// Data data;
-// byteCount = recv(clientSocket, (char *) &data, sizeof(Data), 0);
-// printf("Health : \"%d\"\n", data.health);
-// 
-// 
-// Should have definition for the class in both server and client
-// 
-// 
-// Will work without error in local host since the memory address pointer is the same for server and
-// client, but wont work other than that cus the memory address of the receiving end could have other
-// stuff.
-// Also the class/structure needs to be defined for both sides to interpret the object.
-// 
-// ============================================================================
 
