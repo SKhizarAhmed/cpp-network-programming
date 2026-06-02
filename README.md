@@ -12,3 +12,6 @@ then again right click on Solution Explorer click properties at the bottom => Co
 Also make sure to include ws2_32.lib
 Right click your project name (not solution explorer) (for both projects) => click drop down of Configuration Properties => Linker => Input => Drop down of Additional Dependencies = > Edit = > then paste "ws2_32.lib"
 in the upper empty text box click OK then Apply then again Ok and your ready to go.
+OR Just add
+#pragma comment(lib, "ws2_32.lib")
+in header file
