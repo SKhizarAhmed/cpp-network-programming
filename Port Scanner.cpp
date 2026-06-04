@@ -34,7 +34,7 @@ int main() {
 	
 	// ADD AS Many ports you want but make sure to increase the array size
 	// Also chage the condition of loop according to the size
-	// E.g: If array size is incread to 20 condition should be k<20. 
+	// E.g: If array size is increased to 20 condition should be k<20. 
 
 	int ports[10] = { 21, 22, 23, 25, 53, 80, 135, 443, 445, 8080 };
 	
@@ -67,13 +67,13 @@ int main() {
 			cout << " + Port "<<current_port<<" is OPEN!" << endl;
 		}
 		closesocket(scanner); //Close socket everytime, to free up resources since each iteration
-		// creates a new unbound socket that we connect to a new port, if we dont close socket the older
+		// creates a new unbound socket that we connect to a new port, if we don't close the socket the older
 		// sockets will take up unnecessary space
 		// NOTE: Never ever do WSACleanup() here or it will remove the dll necessary for the loop to
 		// continue
 	}
 
-	// change the IP in 2nd parameter to the target address
+	// change the IP in 2nd STEP to the target address
 
 	WSACleanup();
 	cout << "Scan Completed" << endl;
