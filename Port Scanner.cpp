@@ -30,7 +30,7 @@ int main() {
 
 	// SET THE TARGET IP HERE
 
-	InetPton(AF_INET, _T("192.168.1.6"), &scanner_data.sin_addr.s_addr);
+	InetPton(AF_INET, _T("127.0.0.1"), &scanner_data.sin_addr.s_addr);
 	
 	// ADD AS Many ports you want but make sure to increase the array size
 	// Also chage the condition of loop according to the size
