@@ -3,6 +3,7 @@
 #include <winsock2.h>
 #include <tchar.h> // This is the specific header that handles the _T() macro
 #include <ws2tcpip.h> // <-- ADD THIS LINE FOR InetPton
+#pragma comment(lib, "ws2_32.lib")
 using namespace std;
 int main() {
 
